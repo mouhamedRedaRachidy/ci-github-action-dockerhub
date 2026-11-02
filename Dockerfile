@@ -1,4 +1,4 @@
-FROM nginx:nginx:1.30.6
+FROM nginx:1.30.6
 
 RUN apt update -y
 
