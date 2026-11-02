@@ -24,7 +24,7 @@ jobs:
             
             - name: Build and push docker image
               env:
-                REPOSITORY: nginx
+                REPOSITORY: nginx-ci
                 IMAGE_TAG: latest
               run: |
                 docker build -t ${{ secrets.DOCKERHUB_USER }}/$REPOSITORY:$IMAGE_TAG .
